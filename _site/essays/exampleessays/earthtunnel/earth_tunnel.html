@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>How long would it take to fall through a non-uniform Earth?</title>
+  <meta name="description" content="How long would it take to fall through the Earth?">
+
+  <link rel="canonical" href="http://0.0.0.0:4000/computational-essay-showroom/essays/exampleessays/earthtunnel/earth_tunnel.html">
+  <link rel="alternate" type="application/rss+xml" title="Computational essays from the University of Oslo" href="http://0.0.0.0:4000/computational-essay-showroom/feed.xml">
+
+  <meta property="og:url"         content="http://0.0.0.0:4000/computational-essay-showroom/essays/exampleessays/earthtunnel/earth_tunnel.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="How long would it take to fall through a non-uniform Earth?" />
+<meta property="og:description" content="How long would it take to fall through the Earth?" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://0.0.0.0:4000/computational-essay-showroom/essays/exampleessays/earthtunnel/earth_tunnel.html",
+  "headline":
+    "How long would it take to fall through a non-uniform Earth?",
+  "datePublished":
+    "2019-04-04T04:52:37-05:00",
+  "dateModified":
+    "2019-04-04T04:52:37-05:00",
+  "description":
+    "How long would it take to fall through the Earth?",
+  "author": {
+    "@type": "Person",
+    "name": "UiO"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://0.0.0.0:4000/computational-essay-showroom",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://0.0.0.0:4000/computational-essay-showroom",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/computational-essay-showroom/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/computational-essay-showroom/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+// Helper function to init things quickly
+initFunction = function(myfunc) {
+  runWhenDOMLoaded(myfunc);
+  document.addEventListener('turbolinks:load', myfunc);
+};
+</script>
+
+  <!-- Define some javascript variables that will be useful in other javascript -->
+  <script>
+    const site_basename = '/computational-essay-showroom';
+  </script>
+
+  <!-- Add AnchorJS to let headers be linked -->
+  <script src="/computational-essay-showroom/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script>
+
+initFunction(function () {
+    anchors.add("main h1, main h2, main h3, main h4")
+});
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/computational-essay-showroom/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Load Thebelab for interactive widgets -->
+  <!-- Include Thebelab for interactive code if it's enabled -->
+
+
+  <!-- Google analytics -->
+  <script src="/computational-essay-showroom/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load JS that depends on site variables -->
+  <script>
+/**
+ * Set up copy/paste for code blocks
+ */
+const codeCellId = index => `codecell${index}`
+
+const clipboardButton = id =>
+  `<a class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
+    <img src="/computational-essay-showroom/assets/images/copy-button.svg" alt="Copy to clipboard">
+  </a>`
+
+// Clears selected text since ClipboardJS will select the text when copying
+const clearSelection = () => {
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges()
+  } else if (document.selection) {
+    document.selection.empty()
+  }
+}
+
+// Changes tooltip text for two seconds, then changes it back
+const temporarilyChangeTooltip = (el, newText) => {
+  const oldText = el.getAttribute('data-tooltip')
+  el.setAttribute('data-tooltip', newText)
+  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
+}
+
+const addCopyButtonToCodeCells = () => {
+  // If ClipboardJS hasn't loaded, wait a bit and try again. This
+  // happens because we load ClipboardJS asynchronously.
+  if (window.ClipboardJS === undefined) {
+    setTimeout(addCopyButtonToCodeCells, 250)
+    return
+  }
+
+  const codeCells = document.querySelectorAll('div.highlighter-rouge:not(.output) pre')
+  codeCells.forEach((codeCell, index) => {
+    const id = codeCellId(index)
+    codeCell.setAttribute('id', id)
+    if (document.querySelector(`pre#${id} + a`) == null) {
+      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
+    }
+  })
+
+  const clipboard = new ClipboardJS('.copybtn')
+  clipboard.on('success', event => {
+    clearSelection()
+    temporarilyChangeTooltip(event.trigger, 'Copied!')
+  })
+
+  clipboard.on('error', event => {
+    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
+  })
+
+  // Get rid of clipboard before the next page visit to avoid memory leak
+  document.addEventListener('turbolinks:before-visit', () =>
+    clipboard.destroy()
+  )
+}
+
+initFunction(addCopyButtonToCodeCells);
+</script>
+
+  <!-- Hide cell code -->
+  
+<script>
+/**
+Add buttons to hide code cells
+*/
+
+
+var setCodeCellVisibility = function(inputField, kind) {
+    // Update the image and class for hidden
+    var id = inputField.getAttribute('data-id');
+    var codeCell = document.querySelector(`#${id}`);
+
+    if (kind === "visible") {
+        codeCell.classList.remove('hidden');
+        inputField.checked = true;
+    } else {
+        codeCell.classList.add('hidden');
+        inputField.checked = false;
+    }
+}
+
+var toggleCodeCellVisibility = function (event) {
+    // The label is clicked, and now we decide what to do based on the input field's clicked status
+    if (event.target.tagName === "LABEL") {
+        var inputField = event.target.previousElementSibling;
+    } else {
+        // It is the span inside the target
+        var inputField = event.target.parentElement.previousElementSibling;
+    }
+
+    if (inputField.checked === true) {
+        setCodeCellVisibility(inputField, "visible");
+    } else {
+        setCodeCellVisibility(inputField, "hidden");
+    }
+}
+
+
+// Button constructor
+const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
+
+var addHideButton = function () {
+  // If a hide button is already added, don't add another
+  if (document.querySelector('div.hidecode input') !== null) {
+      return;
+  }
+
+  // Find the input cells and add a hide button
+  document.querySelectorAll('div.input_area div.highlight').forEach(function (item, index) {
+    if (!item.parentElement.classList.contains("hidecode")) {
+        // Skip the cell if it doesn't have a hidecode class
+        return;
+    }
+
+    const id = codeCellId(index)
+    item.setAttribute('id', id);
+    item.insertAdjacentHTML('afterend', hideCodeButton(id))
+
+    // Set up the visibility toggle
+    hideLink = document.querySelector(`#${id} + input + label`);
+    hideLink.addEventListener('click', toggleCodeCellVisibility)
+  });
+}
+
+
+// Initialize the hide buttos
+var initHiddenCells = function () {
+    // Add hide buttons to the cells
+    addHideButton();
+
+    // Toggle the code cells that should be hidden
+    document.querySelectorAll('div.hidecode input').forEach(function (item) {
+        setCodeCellVisibility(item, 'hidden');
+        item.checked = true;
+    })
+}
+
+initFunction(initHiddenCells);
+
+</script>
+
+
+  <!-- Load custom website scripts -->
+  <script src="/computational-essay-showroom/assets/js/scripts.js" async></script>
+
+  <!-- Load custom user CSS and JS  -->
+  <script src="/computational-essay-showroom/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/computational-essay-showroom/assets/custom/custom.css">
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  
+<script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+    
+function dict2param(dict) {
+    params = Object.keys(dict).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(dict[k])
+    });
+    return params.join('&')
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return dict2param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = document.querySelectorAll("a").forEach(function(link) {
+    var href = link.href;
+    // If the link is an internal link...
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['jupyterhub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'jupyterhub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + dict2param(params);
+      link.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    jupyterHubUrl = rest['jupyterhub'];
+    var hubType = null;
+    var hubUrl = null;
+    if (jupyterHubUrl !== undefined) {
+      hubType = 'jupyterhub';
+      hubUrl = jupyterHubUrl;
+    }
+
+    if (hubType !== null) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      var interactButtons = document.querySelectorAll("button.interact-button")
+      var lastButton = interactButtons[interactButtons.length-1];
+      var link = lastButton.parentElement;
+
+      // If we've already run this, skip the link updating
+      if (link.nextElementSibling !== null) {
+        return;
+      }
+
+      // Update the link and add context div
+      var href = link.getAttribute('href');
+      if (lastButton.id === 'interact-button-binder') {
+        // If binder links exist, we need to re-work them for jupyterhub
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+          first = [hubUrl, 'git-sync'].join('/')
+        } else {
+          first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+        }
+        href = first + '?' + binder2Jupyterhub(href);
+      } else {
+        // If interact button isn't binderhub, assume it's jupyterhub
+        // If JupyterHub links, we only need to replace the hub url
+        href = href.replace("", hubUrl);
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // Assume we're working from a local Jupyter server and remove `/hub`
+          href = href.replace("/hub/user-redirect", "");
+        }
+      }
+      link.setAttribute('href', decodeURIComponent(href));
+
+      // Add text after interact link saying where we're launching
+      hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+      link.insertAdjacentHTML('afterend', '<div class="interact-context">on ' + hubUrlNoHttp + '</div>');
+
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+
+
+  <!-- Lunr search code - will only be executed on the /search page -->
+  <script src="/computational-essay-showroom/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script>var initQuery = function() {
+  // See if we have a search box
+  var searchInput = document.querySelector('input#lunr_search');
+  if (searchInput === null) {
+    return;
+  }
+
+  // Function to parse our lunr cache
+  var idx = lunr(function () {
+    this.field('title')
+    this.field('excerpt')
+    this.field('categories')
+    this.field('tags')
+    this.ref('id')
+
+    this.pipeline.remove(lunr.trimmer)
+
+    for (var item in store) {
+      this.add({
+        title: store[item].title,
+        excerpt: store[item].excerpt,
+        categories: store[item].categories,
+        tags: store[item].tags,
+        id: item
+      })
+    }
+  });
+
+  // Run search upon keyup
+  searchInput.addEventListener('keyup', function () {
+    var resultdiv = document.querySelector('#results');
+    var query = document.querySelector("input#lunr_search").value.toLowerCase();
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 })
+          if(query.lastIndexOf(" ") != query.length-1){
+            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != ""){
+            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
+
+      // Empty the results div
+      while (resultdiv.firstChild) {
+        resultdiv.removeChild(resultdiv.firstChild);
+      }
+
+    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
+    for (var item in result) {
+      var ref = result[item].ref;
+      if(store[ref].teaser){
+        var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<div class="archive__item-teaser">'+
+                '<img src="'+store[ref].teaser+'" alt="">'+
+              '</div>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      else{
+    	  var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      resultdiv.insertAdjacentHTML('beforeend', searchitem);
+    }
+  });
+};
+
+initFunction(initQuery);
+</script>
+</head>
+
+  <body>
+    <!-- .js-show-sidebar shows sidebar by default -->
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+      
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+  <a href="https://uio-ccse.github.io/computational-essay-showroom"><img src="/computational-essay-showroom/assets/images/uio_logo_small.svg" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">Computational essays from the University of Oslo</h2>
+  <ul class="c-sidebar__chapters">
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/computational-essay-showroom/index.html"
+        >
+          
+          Example Essays
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/exampleessays/railgun_TOO/Railgun_V1_9.html"
+                >
+                  
+                  How much electric current would you need to use a railgun to launch a package up to the ISS?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/exampleessays/iondrives/ExploringTheMartian_V2_5.html"
+                >
+                  
+                  How would ion drives compare to conventional rockets on a trip to Mars?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry c-sidebar__entry--active"
+                  href="/computational-essay-showroom/essays/exampleessays/earthtunnel/earth_tunnel.html"
+                >
+                  
+                  How long would it take to fall through a non-uniform Earth?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/computational-essay-showroom/index.html"
+        >
+          
+          Student Essays
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/studentessays/stormcloud/2D_Stormcloud_Lightning-sisandst_jrevense.html"
+                >
+                  
+                  What is the best material for a lightning rod?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/studentessays/LHC/LHC_CompEssay.html"
+                >
+                  
+                  What are the effects of relativity on particles in the LHC?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/studentessays/magnetic_bottle_MBP_KG/MagneticBottle_Trap_ComputationalEssay.html"
+                >
+                  
+                  Can we trap a high-energy particle in a magnetic bottle?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/studentessays/railgun_FG_IK/Train_Railgun_CompEssay.html"
+                >
+                  
+                  Kan vi bruke en railgun til å akselerere et tog i Oslo t-banen?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/computational-essay-showroom/essays/studentessays/stormcloud_LS/3D_StormCloud_lassst_FYS1120_H18.html"
+                >
+                  
+                  Hvor langt kan du trygt stå borte fra et lynnedslag?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+  </ul>
+  <p class="sidebar_footer">Powered by <a href="https://github.com/jupyter/jupyter-book">Jupyter Book</a></p>
+</nav>
+
+      
+      <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#gravity-in-and-around-spherical-objects">Gravity in and around spherical objects</a>
+    <ul>
+      <li><a href="#the-shell-theorem">The Shell Theorem</a></li>
+      <li><a href="#the-variable-density-of-the-earth">The variable density of the Earth</a></li>
+      <li><a href="#mass-at-different-heights">Mass at different heights</a></li>
+    </ul>
+  </li>
+  <li><a href="#acceleration-at-different-heights">Acceleration at different heights</a>
+    <ul>
+      <li><a href="#creating-a-function-to-describe-the-acceleration">Creating a function to describe the acceleration</a></li>
+    </ul>
+  </li>
+  <li><a href="#calculating-movement-under-the-effect-of-a-variable-gravity">Calculating movement under the effect of a variable gravity</a></li>
+  <li><a href="#the-payoff-analyzing-our-results">The Payoff: Analyzing our results</a></li>
+  <li><a href="#summary-and-conclusion">Summary and Conclusion</a></li>
+  <li><a href="#references-sources-and-inspiration">References, Sources, and Inspiration</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+      
+      <main class="c-textbook__page" tabindex="-1">
+          <div class="o-wrapper">
+            <div class="c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            
+<div class="buttons">
+<a href="/computational-essay-showroom/content/essays/exampleessays/earthtunnel/earth_tunnel.ipynb" download>
+<button id="interact-button-download" class="interact-button">Download</button>
+</a>
+
+
+
+
+
+
+
+
+
+<a href="https://mybinder.org/v2/gh/uio-ccse/computational-essay-showroom/master?filepath=content%2Fessays%2Fexampleessays%2Fearthtunnel%2Fearth_tunnel.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/computational-essay-showroom/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+
+
+</div>
+
+
+            <div class="c-textbook__content">
+              <h1 id="how-long-would-it-take-to-fall-through-the-earth">How long would it take to fall through the Earth?</h1>
+
+<p><strong>A computational essay by Karl Henrik Fredly, undergraduate at the University of Oslo (karlhf@student.uv.uio.no)</strong></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>What would happen if the ground under you disappeared and you fell all the way to the center of the Earth? What if someone somehow made a tunnel from the surface to the core? How fast would you go along the way? What would your top speed be? Would you be able to get up to the surface again or would you get trapped by gravity?</p>
+
+<p>In this computational essay we are going to look your movement as you fall under the influence of the Earth’s gravity without being stopped by the ground. We will look at how position, velocity and acceleration changes during the fall, and use these findings to better understand the movement.</p>
+
+<figure>
+    <img src="xthe-kola-superdeep-borehole-russia-10.jpg.pagespeed.ic.Fpl43mVzfr.jpg" alt="Drawing" style="width: 60%;" />
+    <figcaption style="text-align:center;">The Kola Borehole (From <a href="http://www.absolute-knowledge.com/unexpected-discoveries-kola-superdeep-borehole/">absolute-knowledge.com</a>)</figcaption>
+</figure>
+
+<h2 id="gravity-in-and-around-spherical-objects">Gravity in and around spherical objects</h2>
+
+<p>In many analyses it’s assumed that the Earth is a perfect sphere with uniform density (<a href="https://www.livescience.com/50312-how-long-to-fall-through-earth.html">example</a>). But, this doesn’t take into account the fact that the Earth has a much denser core. So, for the purpose of this essay we are going to assume that the Earth is a perfect sphere with a varying density given by the <a href="https://en.wikipedia.org/wiki/Preliminary_reference_Earth_model">Preliminary Reference Earth Model (PREM)</a>.</p>
+
+<p>We will also assume that there is no air resistance. With air resistance, our falling person would quickly reach terminal velocity and slowly lose all of their speed near the center of the Earth. This situation would also be interesting to look at, but will not be the focus of this essay. Furhermore, we will assume that the Earth’s rotation has no effect, for example by saying that you fall from pole to pole.</p>
+
+<h3 id="the-shell-theorem">The Shell Theorem</h3>
+
+<p>The main difference between being affected by gravity while outside the Earth, and being affected while inside it, is how much of it is below you to “pull you down”. As you venture further down, less of the Earth will be below you to pull you down, and more of it will be above you to pull you up. In addition to this, as you get closer to different parts of the Earth, they will have a greater pull on you due to being closer to you.</p>
+
+<p>The aforementioned factors lead to some questions and calculations beyond the scope of this essay, which will not be addressed here. We will instead use a result called the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Mechanics/sphshell2.html">Shell Theorem</a> which makes this problem much simpler. The Shell Theorem has the following implications for our problem:</p>
+
+<ul>
+  <li>A spherically symmetric body affects external objects gravitationally as though all of its mass were concentrated at a point at its centre</li>
+  <li>When at a distance r from the center, all mass at a greater distance than r can be ignored</li>
+</ul>
+
+<p>This means that we do not have to calculate the gravitational pull from all throughout the Earth, since we can act as if all of the Earth’s mass is located in its center. We also only need to worry about the what is further in than the point you are currently at.</p>
+
+<p><img src="ShellTheorem.png" alt="Drawing" style="width: 70%;" /></p>
+
+<p>The gravitational force between two objects is given by <script type="math/tex">F = \frac{GMm}{r^2}</script></p>
+
+<p>where G is the gravitational constant $6.68\times10^-11\frac{Nm^2}{kg^2}$, M is the mass of one of the objects, m is the mass of the other object and r is the distance between the objects. The force acts on both of the objects, and is pointed from one object to the other.</p>
+
+<p>We will let M be the mass that is pulling them down. M will vary however, so we will need to use the PREM to find the total mass of the Earth at different distances from the center.</p>
+
+<h3 id="the-variable-density-of-the-earth">The variable density of the Earth</h3>
+
+<p>For plotting and calculations we import numpy, pyplot and polynomial.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span> <span class="c">#Used for mathematical functions and constants</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span> <span class="c">#Used for plotting</span>
+<span class="kn">import</span> <span class="nn">numpy.polynomial.polynomial</span> <span class="k">as</span> <span class="n">poly</span> <span class="c">#Used later for finding a polynomial that approximates the data</span>
+</code></pre></div></div>
+
+<p>The Preliminary Reference Earth Model gives us the density of the Earth at different distances from the center.</p>
+
+<p>The data can be found here: http://ds.iris.edu/ds/products/emc-prem/ at “Model Download”. I use the file “PREM_ANISOTROPIC”.</p>
+
+<p>Let us read the data and store them in arrays.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">radius</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">density</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">infile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"PREM_ANISOTROPIC.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#The file has 199 lines starting with "[Radius] [Density]" that we read need.</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">:]:</span> <span class="c">#The data starts at line 3.</span>
+    <span class="n">numbers</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">radius</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">density</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">infile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span> <span class="c">#We change radius and density to numpy arrays in order to easily manipulate them by 1000 for plotting</span>
+<span class="n">density</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">density</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>By using pylot we can plot the data:</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">density</span><span class="o">/</span><span class="mi">1000</span><span class="p">)</span> <span class="c">#Dividing by 1000 to get more plot-friendly units</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Radius [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Density [kg/m^3 * 10^(-3)]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"The density of the Earth at different radiuses"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_20_0.png" alt="png" /></p>
+
+<p>This image (taken from <a href="https://en.wikipedia.org/wiki/Structure_of_the_Earth">en.wikipedia.org/wiki/Structure_of_the_Earth</a>) shows how the different layers and densities of the earth fit together.</p>
+
+<p><img src="RadialDensityPREM.jpg" alt="Drawing" style="width: 70%;" align="left" /></p>
+
+<h3 id="mass-at-different-heights">Mass at different heights</h3>
+
+<p>Next we need to find out how the total mass further in than us changes as we fall. By working our way from the center we can add one and one “shell” to find the total mass at different distances from the center. We have to find the total mass by adding these shells due to the relatively rough resolution of our density data.</p>
+
+<p><img src="EarthShells.png" alt="title" /></p>
+
+<p>Note that we use the same density for the inner and outer sphere to calculate the mass of the shell. The density we use for the spheres is the average of the Earth’s density at the outer and inner radius of the shell. So that:</p>
+
+<script type="math/tex; mode=display">M_{shell} = M_{outer} - M_{inner} = \frac{4}{3}\pi r_{outer}^3 Density - \frac{4}{3}\pi r_{inner}^3 Density</script>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">masses</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">shellMass</span> <span class="o">=</span> <span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">density</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c">#The innermost shell. In our case this has a mass of 0.</span>
+<span class="n">masses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shellMass</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">radius</span><span class="p">)):</span>
+    <span class="n">shellDensity</span> <span class="o">=</span> <span class="p">(</span><span class="n">density</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">density</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span> <span class="c">#The average of the density at the outer and inner radius</span>
+    <span class="c">#We find the mass of the shells corresponding to every data point</span>
+    <span class="n">shellMass</span> <span class="o">=</span> <span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">shellDensity</span> <span class="o">-</span> <span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">shellDensity</span>
+    <span class="c">#We add the next total mass to the list, adding the mass of the current shell with the previous total mass</span>
+    <span class="n">masses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shellMass</span> <span class="o">+</span> <span class="n">masses</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">masses</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Radius [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Mass [kg]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Mass of the Earth at different radiuses"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_27_0.png" alt="png" /></p>
+
+<p>We see that the total mass increases very slowly near the center, and faster near the surface. While the density is higher near the center, the volume is much smaller. Meaning that the total mass does not change much when the radius increases at first, as the volume of the inner shells are so small.</p>
+
+<p>We can compare the total mass at the outermost radius, with the actual mass of the Earth, which is $5.972*10^{24}kg$, to get an idea of the accuracy of our calculations.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"The total mass we find using this model is {:.3E} kg"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">masses</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<div class="output output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The total mass we find using this model is 5.973E+24 kg
+
+</code></pre></div></div>
+
+<p>This accuracy is encouraging. Note that the total mass is not the only useful result here, as we will use the mass at different radiuses as well.</p>
+
+<h2 id="acceleration-at-different-heights">Acceleration at different heights</h2>
+
+<p>The gravitational force between two objects is given by $F = \frac{GMm}{r^2}$. The Shell Theorem states that at a distance r we only need to consider the mass further in than where we currently are. Additionally, Newton’s second law gives us that:
+\begin{align}
+\&amp;F = ma \Rightarrow a = \frac{F}{m} = \frac{GMm}{r^2m} = \frac{GM}{r^2}
+\end{align}</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">G</span> <span class="o">=</span> <span class="mf">6.674</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">11</span><span class="p">)</span> <span class="c">#The gravitational constant</span>
+<span class="n">acceleration</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">acceleration</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c">#We need to handle the first acceleration here to not have to divide by zero in the loop</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">radius</span><span class="p">)):</span>
+    <span class="n">acceleration</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">masses</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">radius</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">acceleration</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">acceleration</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We can plot these findings as well. We are eventually going to need a general function for gravity since this dataset does not give us the acceleration at the distances between the data points. To better show this we can plot the data as points next to our smooth graph.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="c">#Makes the figure bigger so that we can fit more plots.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">acceleration</span><span class="p">)</span> <span class="c">#The smooth graph</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Radius [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Acceleration [m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"The gravitational acceleration from the Earth at different radiuses"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">132</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span> <span class="n">acceleration</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">""</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c">#The data plotted as points</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Radius [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Acceleration [m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"What our data points actually look like"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">133</span><span class="p">)</span>
+<span class="c">#We also plot how gravity changes moving from the surface and down by turning the plot around.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">radius</span><span class="o">-</span><span class="n">radius</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">acceleration</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"red"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Distance from surface [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Acceleration [m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Gravity as you fall from the surface"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="c">#This line changes the figure size back to the default for future graphs, so that we do not change other figures by accident</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_35_0.png" alt="png" /></p>
+
+<p>On the red graph we see that when you start falling, the acceleration will first stay nearly constant before increasing slightly. This is because, as we get closer to the more dense inner parts of the Earth, the gravitational pull from them will increase. Since the outer layers are so much less dense than the mantle or core, we do not “lose” much gravitational pull compared to the pull we gain from being closer to the denser parts. When we are at around 3500 km gravity starts weakening. This happens because the amount of mass pulling us down is starting to reduce fast.</p>
+
+<h3 id="creating-a-function-to-describe-the-acceleration">Creating a function to describe the acceleration</h3>
+
+<p>So far we have worked out the acceleration at all the points that our dataset contained, but if we are to calculate what a fall through the Earth would look like we will need a general formula, or a function that finds the acceleration at any height.</p>
+
+<p>We can achieve this by using the method <a href="https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.polynomial.polynomial.polyfit.html">polyfit.</a> Polyfit uses linear algebra to find the polynomial that best fits the data points given. I have found that a polynomial of degree 3 works well here, and that using a separate polynomial before and after the maximum spike of the acceleration offers greater accuracy.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">turn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">acceleration</span><span class="p">)</span> <span class="c">#The spike in the acceleration graph</span>
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">coefs1</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">radius</span><span class="p">[:</span><span class="n">turn</span><span class="p">],</span> <span class="n">acceleration</span><span class="p">[:</span><span class="n">turn</span><span class="p">],</span> <span class="n">deg</span><span class="p">)</span> <span class="c">#Polynomial for the points further in than the "spike"</span>
+<span class="n">coefs2</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">radius</span><span class="p">[</span><span class="n">turn</span><span class="p">:],</span> <span class="n">acceleration</span><span class="p">[</span><span class="n">turn</span><span class="p">:],</span> <span class="n">deg</span><span class="p">)</span> <span class="c">#Polynomial for the points further out than the "spike"</span>
+
+<span class="n">earthRadius</span> <span class="o">=</span> <span class="n">radius</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">earthMass</span> <span class="o">=</span> <span class="n">masses</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">def</span> <span class="nf">grav</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
+    <span class="n">dist</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="c">#The absolute value of the distance</span>
+    <span class="n">direc</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="c">#The direction of gravity. It is opposite of our position, since gravity pulls us towards the center</span>
+
+    <span class="k">if</span> <span class="n">dist</span> <span class="o">&gt;</span> <span class="n">earthRadius</span><span class="p">:</span> <span class="c">#If we are outside the Earth</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">direc</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">earthMass</span><span class="o">/</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c">#Normal formula for acceleration using the mass of the entire Earth</span>
+
+    <span class="k">elif</span> <span class="n">dist</span> <span class="o">&lt;</span> <span class="n">radius</span><span class="p">[</span><span class="n">turn</span><span class="p">]:</span> <span class="c">#If we are further in than the "spike"</span>
+        <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">deg</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span> <span class="c">#a0 + a1*r + a2*r**2 + a3*r**3</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">coefs1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">dist</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">direc</span><span class="o">*</span><span class="nb">sum</span><span class="p">)</span>
+    
+    <span class="k">else</span><span class="p">:</span> <span class="c">#Function 2 for distances further out than the "spike"</span>
+        <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">deg</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">coefs2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">dist</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">direc</span><span class="o">*</span><span class="nb">sum</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We will not look too much into how we generate these functions that approximate the graph for gravity we found earlier. However, it is important to understand that what we did was find polynomials that have graphs that are similar to the one we just plotted. If we write out the coefficients of the first polynomial, the one that approximates gravity between the surface and the “spike” in gravity, they look like this:</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">coefs1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[-2.93375495e-02  3.87773093e-06 -2.39818116e-13  3.84955504e-21]
+
+</code></pre></div></div>
+
+<p>\begin{align}
+\ f_1(r) &amp;= a_0 + a_1r^1 + a_2r^2 + a_3r^3
+\ f_1(r) &amp;= -2.93<em>10^{-2} + 3.88</em>10^{-6}r - 2.40<em>10^{-13}r^2 + 3.85</em>10^{-21}r^3
+\end{align}</p>
+
+<p>To show this new general function in relation to the values for gravitational acceleration we found from the data, we can plot them together and summarize the errors for every point:</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">accelApprox</span> <span class="o">=</span> <span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">grav</span><span class="p">(</span><span class="n">r</span><span class="p">))</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">radius</span><span class="p">]</span> <span class="c">#Note that we are only interested in the size of the acceleration here</span>
+<span class="n">error</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">radius</span><span class="p">)):</span>
+    <span class="n">error</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">accelApprox</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">acceleration</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Total error = {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">acceleration</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Using data"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">""</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">radius</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">accelApprox</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Using approximation"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Radius [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Acceleration [m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Acceleration using the data and the approximation"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="output output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Total error = 1.0836096370860657
+
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_44_1.png" alt="png" /></p>
+
+<p>We can see that there is very little difference. This function for gravitational acceleration works for the distances in between the points in our dataset, <em>and</em> the ones outside. When we are further out than the radius of the Earth (outside the ground), the function gives us the acceleration using the formula $\frac{GM}{r^2}$ with the total mass of the Earth as M. This means that we can find the acceleration outside the Earth and all over the insides of the Earth.</p>
+
+<p>So far we have looked at positive distances and positve accelerations for the sake of seing how their sizes relate. From now on we will include the direction of gravity in our calculations. When we are above the center, gravity will point down, and when we are below the center, gravity will point up. The sign of gravity will be the opposite of the sign of our height.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rads</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">radius</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mf">1.5</span><span class="p">,</span><span class="n">radius</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">accs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">grav</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rads</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rads</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">accs</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Height above center [km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Acceleration [m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"The gravitational acceleration from the Earth inside and outside"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_46_0.png" alt="png" /></p>
+
+<p>With our function for gravitational acceleration, we are ready to start calculating the movement.</p>
+
+<h2 id="calculating-movement-under-the-effect-of-a-variable-gravity">Calculating movement under the effect of a variable gravity</h2>
+
+<p>We will first need to define some parameters. I found that 10000 steps of 1 second gives good accuracy and speed for the purpose of this essay.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">10000</span> <span class="c">#number of steps in our calculation</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mi">1</span> <span class="c">#number of seconds each step takes</span>
+</code></pre></div></div>
+
+<p>Our position will be starting at the surface of the Earth (at a heigh equal to the Earth’s radius), and will then decrease as we get closer to the center, reaching negative values when we are below the center.</p>
+
+<p>Our velocity will start at 0m/s and will then decrease as we accelerate downward.</p>
+
+<p>These arrays will be filled with the results of our calculations as we use the Euler-Cromer method, and will be used for plotting.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">positions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">positions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">earthRadius</span> <span class="c">#You can change this initial height to see how the fall would look like from outer space for example</span>
+
+<span class="c">#This is redundant, as the array is all zeroes. However, you can change this value to see how that changes our results</span>
+<span class="n">startingVelocity</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">velocities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">velocities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">startingVelocity</span>
+
+<span class="n">accelerations</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">*</span><span class="n">dt</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We have our initial conditions and function for acceleration in order, so all that’s left is using the Euler-Cromer method to find the positions, velocities and accelerations of the movement over time:</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">accelerations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">grav</span><span class="p">(</span><span class="n">positions</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">accelerations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+    <span class="n">positions</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">positions</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+<span class="n">accelerations</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">grav</span><span class="p">(</span><span class="n">positions</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c">#The acceleration at the end is not calculated during the loop</span>
+</code></pre></div></div>
+
+<p>We use the Euler-Cromer method due to the fact that there is no simple way to get a function for the position. We have no way of finding the exact position and velocity that we will have in the future, so instead we find the acceleration right now and use that to find the velocity we would have after a small time step if the acceleration was constant (which it pretty much is over a small time step). Using this velocity we find the position we would have after a small time step if velocity was constant (which it pretty much is over a small time step). With enough of these time steps we can approximate a movement with a variable acceleration and velocity over a longer period of time.</p>
+
+<p>We can plot our results side by side in subplots:</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="c">#Makes the figure bigger so that we can fit more plots.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">positions</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s">"blue"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Time [s]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"[km]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Position"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">132</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">velocities</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s">"orange"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Time [s]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"[m/s]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Velocity"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">133</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">accelerations</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s">"green"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Time [s]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"[m/s^2]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Acceleration"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="c">#This^ line changes the figure size back to the default for future graphs, so that we do not change other figures by accident</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_57_0.png" alt="png" /></p>
+
+<p>We see that we would fall all the way through and then back again, and then back again and so on. Given that gravity is a conservative force, it makes sense that we would never stop moving, but rather fall back and forth around the center.</p>
+
+<h2 id="the-payoff-analyzing-our-results">The Payoff: Analyzing our results</h2>
+
+<p>Now we have all that we need to find out how long it takes to fall through the Earth. To find out the time it takes, we need to find out how long it takes to reach the first dip of the position graph, as that is the “bottom” of the Earth.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#In order to not find out the time of the second dip, we only look at the positions up to a time of 3000, to be safe</span>
+<span class="n">minIndex</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">positions</span><span class="p">[:</span><span class="mi">3000</span><span class="p">])</span> <span class="c">#Index of the lowest value of positions, when we are at the opposite end of the Earth</span>
+<span class="n">minutes</span> <span class="o">=</span> <span class="n">times</span><span class="p">[</span><span class="n">minIndex</span><span class="p">]</span><span class="o">/</span><span class="mi">60</span>
+<span class="n">exSeconds</span> <span class="o">=</span> <span class="n">times</span><span class="p">[</span><span class="n">minIndex</span><span class="p">]</span><span class="o">%</span><span class="mi">60</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The time it takes to travel through the Earth is {:.0f} minutes and {:.0f} seconds."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minutes</span><span class="p">,</span><span class="n">exSeconds</span><span class="p">))</span>
+<span class="c">#time uses seconds, so we divide by 60 to get minutes, and use %60 to get the remainder of the division</span>
+</code></pre></div></div>
+
+<div class="output output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The time it takes to travel through the Earth is 38 minutes and 10 seconds.
+
+</code></pre></div></div>
+
+<p>We find that it takes slightly over 38 minutes to fall through the Earth. That would be 38 minutes of feeling weightless in free fall before coming to a slow stop at the other end of the Earth, hanging upside down in the air. For comparison, it would take a Boeing 787 almost an entire day to fly halfway around the world.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">topSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">velocities</span><span class="p">)</span> <span class="c">#The highest value in velocities</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The highest speed reached during the fall is {:.0f} m/s."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topSpeed</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="output output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The highest speed reached during the fall is 9920 m/s.
+
+</code></pre></div></div>
+
+<p>On your way down you reach a top speed of 9,920 m/s. That is equal to 35,712 kilometers per hour, or 22,190 miles per hour. That is only slightly slower than the fastest manned object, the Apollo 10, which reached a top speed of 11,107 m/s when returning from the Moon. It is also a fair bit faster than the typical speed of the ISS and other satellites orbiting the Earth, which travel at around 7,700 m/s (which is about the speed we would reach if the Earth had a constant density).</p>
+
+<p>To better look at how position, velocity and acceleration change in relation to each other throughout the fall, we can normalize the arrays by dividing each array by its greatest value and then show them in the same plot.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">positions</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">positions</span><span class="p">)),</span><span class="n">label</span><span class="o">=</span><span class="s">"Position"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">velocities</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">velocities</span><span class="p">)),</span><span class="n">label</span><span class="o">=</span><span class="s">"Velocity"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">times</span><span class="p">,</span><span class="n">accelerations</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">accelerations</span><span class="p">)),</span><span class="n">label</span><span class="o">=</span><span class="s">"Acceleration"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Time [s]"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Normalized graphs for position, velocity and acceleration"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'figure.figsize'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p class="output output_png"><img src="../../../images/essays/exampleessays/earthtunnel/earth_tunnel_65_0.png" alt="png" /></p>
+
+<p>We see that when we reach the center (position=0), acceleration is also 0. This is also when we reach our top velocity.</p>
+
+<p>We saw earlier that gravity is almost constant close to the surface, which can also be seen here. This near constant gravity near the surface is what makes our velocity change so linearly between the sharper turns.</p>
+
+<h2 id="summary-and-conclusion">Summary and Conclusion</h2>
+
+<p>Using our model of a perfectly spherical Earth with a density given by the Preliminary Reference Earth Model, with no air resistance and no rotation we found that we would fall through the entire Earth in 38 minutes and 10 seconds, reaching a top speed of 9,920 m/s along the way. These results are similar to published results: see, for example, Klotz (2015).</p>
+
+<p>We saw that we would fall back and forth, reaching the same height each time. Our model also showed that acceleration would initially increase a little before decreasing nearly linearly while falling towards the center.</p>
+
+<p>These are, of course, estimates. A more accurate picture of a fall through the Earth could include a more accurate density model, air resistance, the coriolis effect or an earth that is not perfectly spherical. Even though you will probably not be falling through the Earth at any time soon, these calculations can be useful in other places. If one wanted to fly a spacecraft into a gaseous planet, one would have to look at how it would fall under the variable gravity while moving through the gases. One might even want to dig through other celestial objects, like moons or asteroids, where these kinds of calculations could be useful.</p>
+
+<h2 id="references-sources-and-inspiration">References, Sources, and Inspiration</h2>
+
+<p>Preliminary Reference Earth Model - http://ds.iris.edu/ds/products/emc-prem/</p>
+
+<p>The speeds of different things - https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)</p>
+
+<p>How Long To Fall Through The Earth? - minutephysics - https://www.youtube.com/watch?v=urQCmMiHKQk</p>
+
+<p>Gravity of Earth - https://en.wikipedia.org/wiki/Gravity_of_Earth</p>
+
+<p>Structure of the Earth https://en.wikipedia.org/wiki/Structure_of_the_Earth</p>
+
+<p>Klotz, A. R. (2015). The Gravity Tunnel in a Non-Uniform Earth. American Journal of Physics, 83, 231–237. http://doi.org/10.1119/1.4898780</p>
+
+              <nav class="c-page__nav">
+  
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/computational-essay-showroom/essays/exampleessays/iondrives/ExploringTheMartian_V2_5">
+      〈 <span class="u-margin-right-tiny"></span> How would ion drives compare to co...
+    </a>
+  
+
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/computational-essay-showroom/index">
+      Student Essays <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
