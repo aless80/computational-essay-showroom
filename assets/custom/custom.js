@@ -1,5 +1,5 @@
 // Add modal to Jupyter's png figures.
-// 20190409 Alessandro
+// 20190409 Alessandro Marin
 const classSelector = "output_png";
 const getElements = () => document.getElementsByClassName(classSelector);
 
@@ -10,7 +10,6 @@ const callback = event => {
     console.log("elem.nodeName:", elem.nodeName);
   }
   var image = elem.firstElementChild;
-  //event.target.baseURI
   // Append a modal opening on click
   modal = document.createElement("div");
   modal.className = "modal";
@@ -40,4 +39,5 @@ const alessandroHandler = () => {
     elements[i].addEventListener("click", callback);
   }
 };
+
 initFunction(alessandroHandler);
